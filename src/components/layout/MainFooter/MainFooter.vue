@@ -48,7 +48,7 @@ export default {
        */
     copyright: {
       type: String,
-      default: 'Copyright © 2018 DesignRevision',
+      default: 'Copyright © 2020 ARORA INC.',
     },
     /**
        * Whether the footer should be wrapped in a container, or not.
