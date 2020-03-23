@@ -22,19 +22,7 @@ A free Vue admin dashboard template pack featuring a modern design system <br />
   <a href="https://designrevision.com/demo/shards-dashboard-lite-vue">
     <img height="55px" src="assets/btn-live-preview.png" />
   </a>
-  <a href="https://designrevision.com/downloads/shards-dashboard-lite-vue">
-    <img height="55px" src="assets/btn-learn-more.png" />
-  </a>
 </p>
-
-<br />
-
-<p align="center">
-<a href="https://designrevision.com/downloads/shards-dashboard-lite-vue">
-<img src="assets/demo-preview.gif" width="650" />
-</a>
-</p>
-
 <br />
 
 > ✨ **Note:** You can download the Sketch files from the official product page.
