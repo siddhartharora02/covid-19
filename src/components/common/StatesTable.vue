@@ -8,11 +8,14 @@
     </d-card-header>
 
     <d-card-body class="p-0">
+
       <!-- Top Referrals List Group -->
-      <b-table :items="referralData" :fields="fields"></b-table>
+hey
     </d-card-body>
+
     <d-card-footer class="border-top">
       <d-row>
+
         <!-- Time Frame -->
         <d-col>
           <d-select size="sm" value="last-week" style="max-width: 130px;">
@@ -35,55 +38,50 @@
 </template>
 
 <script>
+const defaultTopReferrals = [{
+  title: 'GitHub',
+  value: '19,291',
+}, {
+  title: 'Stack Overflow',
+  value: '11,201',
+}, {
+  title: 'Hacker News',
+  value: '9,291',
+}, {
+  title: 'Reddit',
+  value: '8,281',
+}, {
+  title: 'The Next Web',
+  value: '7,128',
+}, {
+  title: 'Tech Crunch',
+  value: '6,218',
+}, {
+  title: 'YouTube',
+  value: '1,218',
+}, {
+  title: 'Adobe',
+  value: '1,171',
+},
+];
+
 export default {
-  data: () => ({
-    fields: [
-      {
-        key: 'loc',
-        label: 'Location'
-      },
-      {
-        key: 'confirmedCasesIndian',
-        label: 'Indian Confirmed Cases',
-        sortable: true
-      },
-      {
-        key: 'confirmedCasesForeign',
-        label: 'Foreign Confirmed Cases',
-        sortable: true
-      },
-      {
-        key: 'discharged',
-        label: 'Discharged',
-        sortable: true
-      },
-      {
-        key: 'deaths',
-        label: 'Deaths',
-        sortable: true
-      }
-    ]
-  }),
-  computed: {
-    regionalData() {
-      return this.$store.state.latest.data.regional;
-    },
-  },
+  name: 'ao-top-referrals',
   props: {
     /**
-       * The component's title.
-       */
+     * The component's title.
+     */
     title: {
       type: String,
-      default: 'Top Referrals',
+      default: 'State wise Statistics',
     },
     /**
-       * The referral datasets.
-       */
+     * The referral datasets.
+     */
     referralData: {
       type: Array,
       default() {
-        return this.regionalData;
+        return defaultTopReferrals;
       },
     },
   },

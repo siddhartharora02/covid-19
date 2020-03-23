@@ -1,10 +1,10 @@
 <template>
   <d-container fluid>
     <d-row>
-      <!-- Main Sidebar -->
-      <main-sidebar :items="sidebarItems" />
+<!--      &lt;!&ndash; Main Sidebar &ndash;&gt;-->
+<!--      <main-sidebar :items="sidebarItems" />-->
 
-      <d-col class="main-content offset-lg-2 offset-md-3 p-0" tag="main" lg="10" md="9" sm="12">
+      <d-col class="main-content p-0" tag="main" lg="12" sm="12">
 
         <!-- Main Navbar -->
         <main-navbar />

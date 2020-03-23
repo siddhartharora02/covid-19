@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import PersonalBlog from './views/PersonalBlog.vue';
+import Dashboard from './views/Dashboard.vue';
 import UserProfileLite from './views/UserProfileLite.vue';
 import AddNewPost from './views/AddNewPost.vue';
 import Errors from './views/Errors.vue';
@@ -22,12 +22,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/blog-overview',
-    },
-    {
-      path: '/blog-overview',
       name: 'blog-overview',
-      component: PersonalBlog,
+      component: Dashboard,
     },
     {
       path: '/user-profile-lite',
